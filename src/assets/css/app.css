@@ -109,7 +109,7 @@ body {
   color: none;
 }
 
-.css-j7qwjs {
+.textbox {
   width: 50%;
   background: linear-gradient(
     135deg,
@@ -124,16 +124,17 @@ body {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
+  box-sizing: border-box;
 }
 
-.css-j7qwjs h2 {
+.textbox h2 {
   text-align: left;
   margin: 0;
   margin-bottom: 20px;
 }
 
-.css-j7qwjs textarea {
+.textbox textarea {
   width: 100%;
   height: 400px;
   background: none;
@@ -146,7 +147,7 @@ body {
   margin-bottom: 10px;
 }
 
-.css-j7qwjs button {
+.textbox button {
   background: #ff891b;
   color: white;
   font-family: "Pretendard";
@@ -158,7 +159,7 @@ body {
   width: 100%;
 }
 
-.css-j7qwjs .save_btn {
+.textbox .save_btn {
   background: #ff891b;
   color: white;
   font-family: "Pretendard";
@@ -171,7 +172,7 @@ body {
   font-size: 14px;
 }
 
-.css-j7qwjs .custom-file-upload {
+.textbox .custom-file-upload {
   background: #ff891b;
   color: white;
   font-family: "Pretendard";
@@ -193,7 +194,7 @@ body {
   cursor: pointer;
 }
 
-.css-j7qwjs .css-k008qs {
+.textbox .css-k008qs {
   width: 100%;
   padding: 0;
   margin-top: auto;
@@ -291,4 +292,72 @@ body {
   margin: 0;
   margin-top: 30px;
   font-weight: 700;
+}
+
+@media (max-width: 1220px) {
+  body {
+    height: 100%;
+  }
+
+  .css-k008qs {
+    flex-direction: column;
+  }
+
+  .react-calendar {
+    width: 100%;
+  }
+
+  .textbox {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .intro h2 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  .css-k008qs {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .react-calendar__navigation__label__labelText {
+    font-size: 15px;
+  }
+
+  .react-calendar {
+    width: 100%;
+  }
+
+  .react-calendar abbr {
+    font-size: 13px;
+  }
+
+  .textbox {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .intro h2 {
+    font-size: 50px;
+  }
+
+  .entry-dot {
+    width: 25px;
+    height: 25px;
+  }
+
+  .textbox {
+    padding: 30px;
+  }
+
+  .textbox h2 {
+    font-size: 18px;
+  }
+
+  .textbox textarea {
+    font-size: 15px;
+  }
 }

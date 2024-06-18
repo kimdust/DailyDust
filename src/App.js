@@ -34,6 +34,24 @@ function App() {
   }, []);
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (showIntro) {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    if (showIntro) {
+      window.addEventListener("scroll", handleScroll);
+    } else {
+      window.removeEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [showIntro]);
+
+  useEffect(() => {
     const formattedDate = selectedDate.toISOString().split("T")[0];
     if (entries[formattedDate]) {
       setText(entries[formattedDate].text || "");
@@ -126,7 +144,7 @@ function App() {
           value={selectedDate}
           tileContent={tileContent}
         />
-        <Flex flexDirection="column">
+        <div className="textbox" display="flex" flexDirection="column">
           <h2>오늘의 일기</h2>
           <textarea
             value={text}
@@ -169,7 +187,7 @@ function App() {
               </button>
             )}
           </Flex>
-        </Flex>
+        </div>
       </Flex>
       {isModalOpen && (
         <div className="modal" onClick={closeModal}>
