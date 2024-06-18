@@ -1,14 +1,11 @@
 import "swiper/css";
-import SlideReplay from "./components/SlideReplay";
-import SlideVideo from "./components/SlideVideo";
-import Mood from "./components/Mood";
+import "../../assets/css/app.css";
+import { Card } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <>
-      <SlideReplay />
-      <SlideVideo />
-      <Mood />
+      <Card />
     </>
   );
 };
