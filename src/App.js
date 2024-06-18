@@ -23,6 +23,15 @@ function App() {
   const [image, setImage] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowIntro(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const formattedDate = selectedDate.toISOString().split("T")[0];
@@ -172,6 +181,10 @@ function App() {
           </div>
         </div>
       )}
+      <div className={`intro ${showIntro ? "active" : "inactive"}`}>
+        <h2>먼지의 하루</h2>
+        <p>by Kim Dust</p>
+      </div>
     </div>
   );
 }

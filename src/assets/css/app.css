@@ -71,6 +71,11 @@ body {
   font-size: 20px;
 }
 
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background: none;
+}
+
 .react-calendar__tile {
   padding: 10px;
   background: none;
@@ -242,4 +247,48 @@ body {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+.intro {
+  background-image: linear-gradient(
+    120deg,
+    #ffecd2 0%,
+    #fcb69f 100%
+  ) !important;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: intro-animation 3s forwards;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.intro.active {
+  opacity: 1;
+}
+
+.intro.inactive {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.intro h2 {
+  font-family: "EF_jejudoldam";
+  color: white;
+  text-shadow: -1px 0px #333, 0px 1px #333, 1px 0px #333, 0px -1px #333;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.intro p {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 700;
 }
