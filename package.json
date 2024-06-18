@@ -1,8 +1,8 @@
 {
-  "name": "dashboard-hori",
+  "name": "DailyDust",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kimdust.me/DustMusic",
+  "homepage": "https://kimdust.me/DailyDust",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
@@ -21,6 +21,7 @@
     "framer-motion": "^11.0.6",
     "global": "^4.4.0",
     "gsap": "^3.12.5",
+    "localforage": "^1.10.0",
     "node-sass": "^9.0.0",
     "polished": "^4.2.2",
     "react": "^18.2.0",
