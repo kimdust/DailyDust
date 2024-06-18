@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DailyDust/static/css/main.cfbaca22.css",
-    "main.js": "/DailyDust/static/js/main.a017d5a7.js",
+    "main.css": "/DailyDust/static/css/main.dd1f341e.css",
+    "main.js": "/DailyDust/static/js/main.5e2692b8.js",
     "static/media/PretendardVariable.ttf": "/DailyDust/static/media/PretendardVariable.c89dc775feed56569658.ttf",
     "index.html": "/DailyDust/index.html",
-    "main.cfbaca22.css.map": "/DailyDust/static/css/main.cfbaca22.css.map",
-    "main.a017d5a7.js.map": "/DailyDust/static/js/main.a017d5a7.js.map"
+    "main.dd1f341e.css.map": "/DailyDust/static/css/main.dd1f341e.css.map",
+    "main.5e2692b8.js.map": "/DailyDust/static/js/main.5e2692b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfbaca22.css",
-    "static/js/main.a017d5a7.js"
+    "static/css/main.dd1f341e.css",
+    "static/js/main.5e2692b8.js"
   ]
 }
